@@ -1,6 +1,8 @@
+@import 'mediawiki.mixins';
+
 #siteSub { display: none; }
 
-html, body { margin: 0; padding; 0; }
+html, body { margin: 0; padding: 0; }
 body { font-family: Helvetica, Arial, "Source Sans Pro", "Droid Sans", sans-serif; color: #fff; background: #333; -webkit-font-smoothing: antialiased; }
 a { color: #ff6000; text-decoration: underline; }
 a:visited { color: #a63e00; text-decoration: underline; }
@@ -246,16 +248,14 @@ textarea {
 h1.firstHeading, h2 {
   border-bottom: solid 1px black;
 }
-#bodyContent a[href ^="http://"],
-#bodyContent a[href ^="gopher://"] {
-    background: url("../Vector/images/external-link-ltr-icon.svg") center right no-repeat;
+/* @embed */
+.external {
+    background-position: center right;
+    background-repeat: no-repeat;
+    .background-image-svg( 'images/external-link-ltr-icon.svg', 'images/external-link-ltr-icon.png' );
     padding-right: 13px;
 }
-#bodyContent a[href ^="https://"],
-.link-https {
-    background: url("../Modern/resources/images/lock_icon.gif") center right no-repeat;
-    padding-right: 16px;
-}
+
 #bodyContent a[href ^="mailto:"],
 .link-mailto {
     background: url("mail_icon.gif") center right no-repeat;

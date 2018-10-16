@@ -19,8 +19,9 @@
 	},
 	"ResourceModules": {
 		"skins.bitraf.styles": {
+			"class": "Vector\\ResourceLoaderLessModule",
 			"styles": {
-				"main.css": {
+				"main.less": {
 					"media": "screen"
 				}
 			}
