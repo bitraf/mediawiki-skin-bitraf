@@ -302,8 +302,8 @@ class BitrafTemplate extends BaseTemplate {
 
 					<?php
 					}
-					wfRunHooks( 'BitrafTemplateToolboxEnd', array( &$this ) );
-					wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this, true ) );
+					// wfRunHooks( 'BitrafTemplateToolboxEnd', array( &$this ) );
+					// wfRunHooks( 'SkinTemplateToolboxEnd', array( &$this, true ) );
 					?>
 				</ul>
 				<?php $this->renderAfterPortlet( 'tb' ); ?>
